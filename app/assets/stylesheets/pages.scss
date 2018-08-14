@@ -1,3 +1,38 @@
 .table-container {
   margin-top: 50px;
 }
+
+
+.dataTables_wrapper {
+  #ajax-table {
+    &.dataTable {
+      td {
+        color: grey;
+      }
+    }
+
+    thead {
+      tr {
+        background-color: dimgrey;
+        color: white;
+
+        th {
+          border-width: 0px;
+        }
+      }
+    }
+
+    tr {
+      td.character-column {
+        text-align: right;
+        vertical-align: top;
+      }
+
+      td.season-column,
+      td.episode-column {
+        text-align: center;
+        vertical-align: top;
+      }
+    }
+  }
+}
